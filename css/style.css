@@ -1,3 +1,11 @@
+body{
+	margin: 0;
+}
 #navbar{
-	background-color: #2a292b;
+	background-color: #202629;
+}
+#banner{
+	background: #202629 url('../img/header-bg.jpg') fixed center;
+	background-size: cover;
+	padding: 20vh 0;
 }
