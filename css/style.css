@@ -3,9 +3,70 @@ body{
 }
 #navbar{
 	background-color: #202629;
+	position: fixed;
+	width: 100%;
 }
+#nav-title{
+	float: left;
+}
+#navigation{
+	float: right;
+}
+#navigation>ul>li{
+	float: left;
+}
+#navigation>ul>li a{
+	padding: 10px 20px;
+	display: block;
+}
+
 #banner{
 	background: #202629 url('../img/header-bg.jpg') fixed center;
 	background-size: cover;
 	padding: 20vh 0;
+}
+
+.portfolio-item{
+	float: left;
+	width: 33.33%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.portfolio-item img{
+	max-width: 100%;
+}
+
+.about-item{
+	width: 50%;
+}
+.about-item:nth-of-type(even){
+	margin-left: auto;
+}
+
+.team-item{
+	float: left;
+	float: left;
+	width: 33.33%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.team-item img{
+	max-width: 100%;
+	border-radius: 100em;
+}
+
+#contact{
+	background: #222;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+ul div{
+	clear: both;
 }
