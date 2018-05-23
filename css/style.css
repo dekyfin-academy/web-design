@@ -2,12 +2,18 @@ body{
 	margin: 0;
 }
 #navbar{
-	background-color: #202629;
+	background-color: #202629aa;
 	position: fixed;
 	width: 100%;
+	z-index: 10;
+	color: white;
+}
+#navbar a{
+	color: inherit;
 }
 #nav-title{
 	float: left;
+	color: #ffd800;
 }
 #navigation{
 	float: right;
@@ -23,7 +29,9 @@ body{
 #banner{
 	background: #202629 url('../img/header-bg.jpg') fixed center;
 	background-size: cover;
-	padding: 20vh 0;
+	padding: 200px 0;
+	min-height: 100vh;
+	box-sizing: border-box;
 }
 
 .portfolio-item{
@@ -39,9 +47,23 @@ body{
 
 .about-item{
 	width: 50%;
+	position: relative;
+	left: 90px;
+	margin-bottom: 9em;
+}
+.about-item img{
+	float: right;
+	border-radius: 100%;
+	width: 180px;
+	border: 6px solid #eee;
+	box-sizing: border-box;
 }
 .about-item:nth-of-type(even){
 	margin-left: auto;
+	left: -90;
+}
+.about-item:nth-of-type(even) img{
+	float: left;
 }
 
 .team-item{
@@ -54,10 +76,29 @@ body{
 .team-item img{
 	max-width: 100%;
 	border-radius: 100em;
+	max-width: 220px;
 }
 
 #contact{
 	background: #222;
+}
+#footer{
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+#footer>div{
+	float: left;
+	width: 33.33%;
+}
+#contact-form{
+	overflow: hidden;
+}
+#contact-form>div{
+	float: left;
+	width: 50%;
+	padding: 15px;
+	box-sizing: border-box;
 }
 
 .container{
@@ -65,6 +106,30 @@ body{
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+}
+.page-section{
+	padding: 4em;
+}
+
+.button{
+	background: #fd2;
+	padding: 20px 40px;
+	color: white;
+	border-radius: 4px;
+}
+
+input,
+textarea{
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px;
+	border: 0;
+	border-radius: 4px;
+}
+
+textarea{
+	height: 216px;
 }
 
 ul div{

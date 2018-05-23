@@ -5,23 +5,25 @@
 	</head>
 	<body>
 		<header id="navbar">
-			<h2 id="nav-title">Code Academy</h2>
-			<nav id="navigation">
-				<ul>
-					<li>
-						<a href="#services">SERVICES</a>
-					</li>
-					<li>
-						<a href="#portfolio">PORTFOLIO</a>
-					</li>
-					<li>
-						<a href="#about">ABOUT</a></li>
-					<li>
-						<a href="#team">TEAM</a></li>
-					<li>
-						<a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<h2 id="nav-title">Code Academy</h2>
+				<nav id="navigation">
+					<ul>
+						<li>
+							<a href="#services">SERVICES</a>
+						</li>
+						<li>
+							<a href="#portfolio">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="#about">ABOUT</a></li>
+						<li>
+							<a href="#team">TEAM</a></li>
+						<li>
+							<a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		
 		<main>
@@ -29,14 +31,14 @@
 			<header id="banner">
 				<h1>2018 Web Development</h1>
 				<h3>Web design is fun</h3>
-				<a href="#">Tell me more</a>
+				<a class="button" href="#">Tell me more</a>
 			</header>
 
-			<section id="services" class="container">
+			<section id="services" class="container page-section">
 				<h2>SERVICES</h2>
 			</section>
 
-			<section id="portfolio" class="container">
+			<section id="portfolio" class="container page-section">
 				<h2>PORTFOLIO</h2>
 				<h4>Our works so far</h4>
 				<ul>
@@ -69,7 +71,7 @@
 				</ul>
 			</section>
 			
-			<section id="about" class="container">
+			<section id="about" class="container page-section">
 				<h2>ABOUT</h2>
 				<h4>Our history so far</h4>
 
@@ -117,7 +119,7 @@
 				</ul>
 			</section>
 
-			<section id="team" class="container">
+			<section id="team" class="container page-section">
 				<h2>OUR AMAZING TEAM</h2>
 				<h4>The team behind our story</h4>
 
@@ -140,9 +142,20 @@
 				
 			</section>
 
-			<section id="contact">
+			<section id="contact" class="page-section">
 				<div class="container">
 					<h2>CONTACT</h2>
+					<h4>Send us your message and we'll get back to you</h4>
+					<form id="contact-form">
+						<div>
+							<input name="name" type="text" placeholder="Name" />
+							<input name="email" type="email" placeholder="Email" />
+							<input name="phone" type="tel" placeholder="tel" />
+						</div>
+						<div>
+							<textarea name="message" placeholder="Message" rows="11"></textarea>
+						</div>
+					</form>
 				</div>
 			</section>
 
