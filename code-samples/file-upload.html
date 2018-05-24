@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>File upload Example</title>
+		<style>
+			label{
+				display: block;
+			}
+			fieldset{
+				margin: 2em 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>File upload Example</h1>
+		<forms enctype="multipart/form-data">
+			<fieldset>
+				<legend>What clothing brands do you love?</legend>
+				<label>
+					<input name="clothes[]" type="checkbox" value="armani" /> Armani
+				</label>
+				<label>
+					<input name="clothes[]" type="checkbox" value="zara" /> Zara
+				</label>
+				<label>
+					<input name="clothes[]" type="checkbox" value="tommy" /> Tommy
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>File Upload</legend>
+				<label>
+					<input type="file" name="image" /> 
+					Select any file
+				</label>
+				<label>
+					<input type="file" name="image2" accept="image/*, video/*" /> 
+					Image or video
+				</label>
+				<label>
+					<input type="file" name="image3" accept=".jpg, .png" /> 
+					Select an .jpg or .png image
+				</label>
+
+			</fieldset>
+			
+		</forms>
+
+		
+	</body>
+
+</html>

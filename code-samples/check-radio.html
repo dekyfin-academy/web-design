@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Checkbox &amp; Radio Example</title>
+		<style>
+			label{
+				display: block;
+			}
+			fieldset{
+				margin: 2em 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>What car do you drive?</legend>
+			<label>
+				<input name="car" type="radio" value="toyota" /> Toyota
+			</label>
+			<label>
+				<input name="car" type="radio" value="nissan" /> Nissan
+			</label>
+			<label>
+				<input name="car" type="radio" value="hyundai" /> Hyundai
+			</label>
+			<label>
+				<input name="car" type="radio" value="opel" /> Opel
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>What clothing brands do you love?</legend>
+			<label>
+				<input name="clothes[]" type="checkbox" value="armani" /> Armani
+			</label>
+			<label>
+				<input name="clothes[]" type="checkbox" value="zara" /> Zara
+			</label>
+			<label>
+				<input name="clothes[]" type="checkbox" value="tommy" /> Tommy
+			</label>
+		</fieldset>
+	</body>
+
+</html>
