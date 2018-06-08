@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>Table ExampleS</title>
+		<style>
+			table{
+				border: 1px solid;
+				margin-bottom: 30px;
+				table-layout: fixed;
+			}
+			td,
+			th{
+				border: 1px solid;
+				padding: 12px 20px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+
+		<table>
+			<caption>General Table</caption>
+			<thead>
+				<tr>
+					<th>Head R1,C1</th>
+					<th>Head R1,C2</th>
+					<th>Head R1,C3</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Footer R1,C1</td>
+					<td>Footer R1,C2</td>
+					<td>Footer R1,C3</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Body R1,C1</td>
+					<td>Body R1,C2</td>
+					<td>Body R1,C3</td>
+				</tr>
+				<tr>
+					<td>Body R2,C1</td>
+					<td>Body R2,C2</td>
+					<td>Body R2,C3</td>
+				</tr>
+			</tbody>
+		</table>
+
+		
+		<table>
+			<caption>Table without head and foot</caption>
+			<tr>
+				<th>Head R1,C1</th>
+				<th>Head R1,C2</th>
+				<th>Head R1,C3</th>
+			</tr>
+			<tr>
+				<td>Body R1,C1</td>
+				<td>Body R1,C2</td>
+				<td>Body R1,C3</td>
+			</tr>
+			<tr>
+				<td>Body R2,C1</td>
+				<td>Body R2,C2</td>
+				<td>Body R2,C3</td>
+			</tr>
+			<tr>
+				<td>Footer R3,C1</td>
+				<td>Footer R3,C2</td>
+				<td>Footer R3,C3</td>
+			</tr>
+		</table>
+
+
+		
+		<table>
+			<caption>Table with multi-span cells</caption>
+			<tr>
+				<th>Head R1,C1</th>
+				<th>Head R1,C2</th>
+				<th>Head R1,C3</th>
+			</tr>
+			<tr>
+				<td colspan="2">occupies 2 columns</td>
+				<td>Body R1,C2</td>
+			</tr>
+			<tr>
+				<td>Body R2,C1</td>
+				<td>Body R2,C2</td>
+				<td rowspan="2">Occupies 2 rows</td>
+			</tr>
+			<tr>
+				<td>Footer R3,C1</td>
+				<td>Footer R3,C2</td>
+			</tr>
+		</table>
+		
+
+		<table>
+			<caption>Table with colgroup</caption>
+			<colgroup>
+				<col style="background: red;" />
+				<col style="background: green" />
+				<col style="background: yellow" />
+			</colgroup>
+			<tr>
+				<th>Head R1,C1</th>
+				<th>Head R1,C2</th>
+				<th>Head R1,C3</th>
+			</tr>
+			<tr>
+				<td>Body R1,C1</td>
+				<td>Body R1,C2</td>
+				<td>Body R1,C3</td>
+			</tr>
+			<tr>
+				<td>Body R2,C1</td>
+				<td>Body R2,C2</td>
+				<td>Body R2,C3</td>
+			</tr>
+			<tr>
+				<td>Footer R3,C1</td>
+				<td>Footer R3,C2</td>
+				<td>Footer R3,C3</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
