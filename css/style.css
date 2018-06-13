@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	font: 16px helvetica, sans-serif;
 }
 #navbar{
 	background-color: #202629aa;
@@ -11,12 +12,20 @@ body{
 #navbar a{
 	color: inherit;
 }
+#navbar a:hover{
+	color: #ffd800;	
+}
 #nav-title{
 	float: left;
 	color: #ffd800;
+	font-family: "Kaushan Script";
+	font-weight: normal;
 }
 #navigation{
 	float: right;
+}
+#navigation ul{
+	list-style-type: none;
 }
 #navigation>ul>li{
 	float: left;
@@ -24,6 +33,9 @@ body{
 #navigation>ul>li a{
 	padding: 10px 20px;
 	display: block;
+}
+#navigation>ul>li a:hover{
+	color: #ffd800;	
 }
 
 #banner{
@@ -33,6 +45,16 @@ body{
 	min-height: 100vh;
 	box-sizing: border-box;
 	position: relative;
+}
+
+#banner h1{
+	font-weight: normal;
+	font-style: italic;
+}
+
+#banner h3{
+	font-size: 70px;
+	text-transform: uppercase;
 }
 
 #banner video{
@@ -45,6 +67,20 @@ body{
 	object-fit: cover;
 }
 
+#services{
+	text-align: center;
+}
+
+#portfolio{
+	text-align: center;
+}
+
+#portfolio ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 .portfolio-item{
 	float: left;
 	width: 33.33%;
@@ -54,6 +90,11 @@ body{
 
 .portfolio-item img{
 	max-width: 100%;
+}
+#about ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .about-item{
@@ -77,6 +118,13 @@ body{
 	float: left;
 }
 
+#team ul{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
 .team-item{
 	float: left;
 	float: left;
@@ -92,6 +140,7 @@ body{
 
 #contact{
 	background: #222;
+	text-align: center;
 }
 #footer{
 	padding: 20px 0;
@@ -133,6 +182,28 @@ body{
 	color: white;
 	border: none;
 	border-radius: 4px;
+	font-weight: bold;
+}
+
+.button:hover{
+	background: #db1;
+}
+
+.text-normal{
+	font-weight: normal;
+}
+
+.section-header{
+	font-size: 40px;
+	text-align: center;
+}
+
+.section-subheader{
+	font-style: italic;
+	font-weight: normal;
+	color: #888;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
 }
 
 input[type=text],
@@ -153,4 +224,79 @@ textarea{
 
 ul div{
 	clear: both;
+}map{
+	width: 100%;
+	height: 300px;
+	border: 0;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.page-section{
+	padding: 4em;
+}
+
+.button{
+	background: #fd2;
+	padding: 20px 40px;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.button:hover{
+	background: #db1;
+}
+
+.text-normal{
+	font-weight: normal;
+}
+
+.section-header{
+	font-size: 40px;
+	text-align: center;
+}
+
+.section-subheader{
+	font-style: italic;
+	font-weight: normal;
+	color: #888;
+	text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea{
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px;
+	border: 0;
+	border-radius: 4px;
+}
+
+textarea{
+	height: 216px;
+}
+
+ul::before,
+ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+p{
+	line-height: 1.8;
+	font-family: "Roboto Slab", serif;
+}
+
+a{
+	text-decoration: none;
 }
