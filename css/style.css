@@ -3,13 +3,6 @@ body{
 	font: 16px helvetica, sans-serif;
 	color: #333;
 }
-#navbar{
-	background-color: #202629aa;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-	color: white;
-}
 #navbar a{
 	color: inherit;
 }
